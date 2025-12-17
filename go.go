@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"GO/newdir"
+)
 
 func main() {
 
 	fmt.Println("teste")
+	fmt.Println(newdir.Sum(3))
 }
