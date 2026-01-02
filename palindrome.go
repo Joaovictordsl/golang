@@ -23,39 +23,10 @@ func isPalindrome(x int) bool {
 	} else {
 		return false
 	}
-
 }
 
 func main() {
 
 	fmt.Println(isPalindrome(121))
-
-	// original := 323
-	// ultimo_digito := 0
-	// invertido := 0
-
-	// ultimo_digito = original % 10
-	// invertido = (invertido * 10) + ultimo_digito
-	// original = original / 10
-
-	// fmt.Println(ultimo_digito)
-	// fmt.Println(invertido)
-	// fmt.Println(original)
-
-	// ultimo_digito = original % 10
-	// invertido = (invertido * 10) + ultimo_digito
-	// original = original / 10
-
-	// fmt.Println(ultimo_digito)
-	// fmt.Println(invertido)
-	// fmt.Println(original)
-
-	// ultimo_digito = original % 10
-	// invertido = (invertido * 10) + ultimo_digito
-	// original = original / 10
-
-	// fmt.Println(ultimo_digito)
-	// fmt.Println(invertido)
-	// fmt.Println(original)
 
 }
