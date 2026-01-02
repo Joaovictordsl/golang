@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 //pega o resto da divisao por 10 e armazena numa variavel
 //pega o inteiro que tem e divide por 10, e multi por 10
 //pega o valor multiplicado e soma com o resto
@@ -25,8 +23,8 @@ func isPalindrome(x int) bool {
 	}
 }
 
-func main() {
+// func main() {
 
-	fmt.Println(isPalindrome(121))
+// 	fmt.Println(isPalindrome(121))
 
-}
+// }
