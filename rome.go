@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-func romanToInt(s string) {
+func romanToInt(s string) int {
+
+	result := 0
 
 	valores := map[byte]int{
 		'I': 1,
@@ -14,7 +16,22 @@ func romanToInt(s string) {
 		'M': 1000,
 	}
 
-	fmt.Println(valores)
+	for i := 0; i < len(s); i++ {
+		// Acede ao valor usando o byte do caractere atual
+
+		valorAtual := valores[s[i]]
+
+		if i < len(s)-1 && valorAtual < valores[s[i+1]] {
+			result = result - valorAtual
+
+		} else {
+
+			result = result + valorAtual
+		}
+
+		fmt.Println("Convertendo", s, "em", result)
+	}
+	return result
 
 	// 	// for i := 0; i < len(s); i++ {
 	// 	// 	valorAtual := valores[s[i]]
