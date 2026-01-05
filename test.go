@@ -4,15 +4,7 @@ import "fmt"
 
 func main() {
 
-	str := []string{"Ola", "teste", "eu"}
-	result := []string{}
+	array := []int{22, 55, 67, 68, 89, 100, 123, 243, 4000, 8054}
 
-	for i := 0; i < len(str); i++ {
-
-	}
-	// fmt.Printf("%c\n", str[0][1])
-
-	// result = append(result, string(str[0][0]))
-
-	fmt.Println(result)
+	fmt.Println(binary(array, 100))
 }
