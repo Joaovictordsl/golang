@@ -11,12 +11,14 @@ func Binary(array []int, num int) int {
 
 		if guess == num {
 			return mid
-		} else if num < guess {
-			high = mid - 1
-		} else {
+		} else if guess < num {
 			low = mid + 1
+		} else {
+			high = mid - 1
 		}
+
 	}
 
 	return -1
+
 }
