@@ -1,6 +1,6 @@
-package main
+package algorithms
 
-func binary(array []int, num int) int {
+func Binary(array []int, num int) int {
 
 	low := 0
 	high := len(array) - 1
@@ -11,8 +11,7 @@ func binary(array []int, num int) int {
 
 		if guess == num {
 			return mid
-
-		} else if guess > num {
+		} else if num < guess {
 			high = mid - 1
 		} else {
 			low = mid + 1
