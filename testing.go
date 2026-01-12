@@ -1,6 +1,6 @@
 package main
 
-func binary(array []int, target int) int {
+func binary_2(array []int, target int) int {
 	low := 0
 	high := len(array) - 1
 
@@ -10,7 +10,12 @@ func binary(array []int, target int) int {
 
 		if guess == target {
 			return mid
+		} else if target < guess {
+			high = mid - 1
+		} else {
+			low = mid + 1
 		}
 
 	}
+	return -1
 }
